@@ -1,0 +1,42 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Tue Sep 03 13:25:43 2024 *
+NOTE DESIGN NAME: mipi2parallel_top *
+NOTE DEVICE NAME: LIF-MD6000-6CKFBGA80 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS pd_o[0] : D10 : out *
+NOTE PINS reset_n_i : E2 : in *
+NOTE PINS de_o : H10 : out *
+NOTE PINS hsync_o : K9 : out *
+NOTE PINS vsync_o : K8 : out *
+NOTE PINS clk_pixel_o : J6 : out *
+NOTE PINS pd_o[23] : J8 : out *
+NOTE PINS pd_o[22] : K10 : out *
+NOTE PINS pd_o[21] : K7 : out *
+NOTE PINS pd_o[20] : J9 : out *
+NOTE PINS pd_o[19] : J7 : out *
+NOTE PINS pd_o[18] : J10 : out *
+NOTE PINS pd_o[17] : K6 : out *
+NOTE PINS pd_o[16] : H9 : out *
+NOTE PINS pd_o[15] : K5 : out *
+NOTE PINS pd_o[14] : G9 : out *
+NOTE PINS pd_o[13] : J5 : out *
+NOTE PINS pd_o[12] : G10 : out *
+NOTE PINS pd_o[11] : K4 : out *
+NOTE PINS pd_o[10] : F9 : out *
+NOTE PINS pd_o[9] : J4 : out *
+NOTE PINS pd_o[8] : F10 : out *
+NOTE PINS pd_o[7] : K3 : out *
+NOTE PINS pd_o[6] : E9 : out *
+NOTE PINS pd_o[5] : J3 : out *
+NOTE PINS pd_o[4] : E10 : out *
+NOTE PINS pd_o[3] : F2 : out *
+NOTE PINS pd_o[2] : D9 : out *
+NOTE PINS pd_o[1] : F1 : out *
+NOTE PINS ref_clk_i : E1 : in *
+NOTE PINS SYSCONFIG_PIN_SPI_SS/CSN/SCL : H1 : inout *
+NOTE PINS SYSCONFIG_PIN_SPI_SCK/MCK/SDA : J1 : inout *
+NOTE PINS SYSCONFIG_PIN_MISO_D1 : K1 : inout *
+NOTE PINS SYSCONFIG_PIN_MOSI_D0 : G1 : inout *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: off *

@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_800x600.log"
+-o "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_800x600.csv"
+-pr "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_800x600.prf"

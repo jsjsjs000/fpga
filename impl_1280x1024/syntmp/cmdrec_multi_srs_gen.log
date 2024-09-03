@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe  -link  -top  mipi2parallel_top  -multisrs  C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\synwork\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_comp.srs  -osyn  C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\synwork\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_mult.srs  -log  C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\synlog\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe -link -top mipi2parallel_top -multisrs ..\synwork\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_comp.srs -osyn ..\synwork\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_mult.srs -log ..\synlog\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\fpga_crosslink_lif_md6000_dsi_to_oled_impl_1280x1024_comp.srs|io:i|time:1725362722|size:36147|exec:0|csum:4E0583BE087876601D9B98BE2FE6204F
+file:..\synwork\fpga_crosslink_lif_md6000_dsi_to_oled_impl_1280x1024_mult.srs|io:o|time:1725362723|size:4726|exec:0|csum:
+file:..\synlog\fpga_crosslink_lif_md6000_dsi_to_oled_impl_1280x1024_multi_srs_gen.srr|io:o|time:1725362723|size:1222|exec:0|csum:
+file:..\..\..\..\..\..\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe|io:i|time:1691657656|size:10600960|exec:1|csum:6BAEBE966B12EE4A1CCC452B6603E0B1

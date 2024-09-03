@@ -1,0 +1,80 @@
+{
+"Synplify Pro (R) Job Log" : {
+	"Date" : "11:42:12    03-Sep-2024",
+	"Working Directory" : "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll/syn_results",
+	"Install" : "C:/lscc/diamond/3.13/synpbase"
+},
+"syn_results" :{
+   "Start Time" : "11:42:02",
+   "Runtime" : "10s",
+   "Executable Run Time" : "09s",
+   "synthesis" : {
+      "Start Time" : "11:42:02",
+      "Runtime" : "10s",
+      "Executable Run Time" : "09s",
+      "compile" : {
+         "Start Time" : "11:42:02",
+         "Runtime" : "06s",
+         "Executable Run Time" : "05s",
+         "compile_flow" : {
+            "Start Time" : "11:42:02",
+            "Runtime" : "03s",
+            "Executable Run Time" : "02s",
+            "compiler" : {
+               "executable" : "bin64/c_hdl.exe",
+               "Run Directory" : "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll/syn_results",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "11:42:02",
+               "Run Time" : "03s",
+               "Exe Run Time" : "02s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            },
+            "multi_srs_gen" : {
+               "executable" : "bin64/syn_nfilter.exe",
+               "Run Directory" : "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll/syn_results",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "11:42:05",
+               "Run Time" : "00s",
+               "Exe Run Time" : "00s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            }
+         },
+         "premap" : {
+            "executable" : "bin64/m_gen_lattice.exe",
+            "Run Directory" : "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll/syn_results",
+            "Run State" : "Complete",
+            "Return Code" : "0",
+            "Has Errors" : "no",
+            "Run Start Time" : "11:42:05",
+            "Run Time" : "03s",
+            "Exe Run Time" : "03s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      },
+      "map" : {
+         "Start Time" : "11:42:08",
+         "Runtime" : "04s",
+         "Executable Run Time" : "04s",
+         "fpga_mapper" : {
+            "executable" : "bin64/m_gen_lattice.exe",
+            "Run Directory" : "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll/syn_results",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "11:42:08",
+            "Run Time" : "04s",
+            "Exe Run Time" : "04s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      }
+   }
+}
+}

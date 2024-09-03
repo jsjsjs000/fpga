@@ -1,0 +1,60 @@
+[ActiveSupport MAP]
+Device = LIF-MD6000;
+Package = CKFBGA80;
+Performance = 6;
+LUTS_avail = 5936;
+LUTS_used = 166;
+FF_avail = 5973;
+FF_used = 1;
+INPUT_LVCMOS18 = 2;
+OUTPUT_LVCMOS18 = 28;
+IO_avail = 37;
+IO_used = 30;
+EBR_avail = 20;
+EBR_used = 3;
+; Begin EBR Section
+Instance_Name = mipi2parallel_inst/b2p_inst/byte2pixel_wrapper/byte2pixel/pix_mem/pmi_ram_dpLbnonessdr48384838p1329f73b_0_2_0;
+Type = PDPW8KE;
+REGMODE = OUTREG;
+RESETMODE = SYNC;
+ASYNC_RESET_RELEASE = SYNC;
+GSR = DISABLED;
+MEM_LPC_FILE = pmi_ram_dpLbnonessdr48384838p1329f73b__PMIP__8__48__48__-1B;
+Instance_Name = mipi2parallel_inst/b2p_inst/byte2pixel_wrapper/byte2pixel/pix_mem/pmi_ram_dpLbnonessdr48384838p1329f73b_0_0_2;
+Type = PDPW8KE;
+REGMODE = OUTREG;
+RESETMODE = SYNC;
+ASYNC_RESET_RELEASE = SYNC;
+GSR = DISABLED;
+MEM_LPC_FILE = pmi_ram_dpLbnonessdr48384838p1329f73b__PMIP__8__48__48__-1B;
+Instance_Name = mipi2parallel_inst/b2p_inst/byte2pixel_wrapper/byte2pixel/pix_mem/pmi_ram_dpLbnonessdr48384838p1329f73b_0_1_1;
+Type = PDPW8KE;
+REGMODE = OUTREG;
+RESETMODE = SYNC;
+ASYNC_RESET_RELEASE = SYNC;
+GSR = DISABLED;
+MEM_LPC_FILE = pmi_ram_dpLbnonessdr48384838p1329f73b__PMIP__8__48__48__-1B;
+; End EBR Section
+; Begin PLL Section
+Instance_Name = int_pll_inst/PLLInst_0;
+Type = EHXPLLM;
+CLKOP_Post_Divider_A_Input = DIVA;
+CLKOS_Post_Divider_B_Input = DIVB;
+CLKOS2_Post_Divider_C_Input = DIVC;
+CLKOS3_Post_Divider_D_Input = DIVD;
+FB_MODE = CLKOP;
+CLKI_Divider = 2;
+CLKFB_Divider = 3;
+CLKOP_Divider = 30;
+CLKOS_Divider = 27;
+CLKOS2_Divider = 27;
+CLKOS3_Divider = 1;
+CLKOP_Desired_Phase_Shift(degree) = 0;
+CLKOP_Trim_Option_Rising/Falling = FALLING;
+CLKOP_Trim_Option_Delay = 0;
+CLKOS_Desired_Phase_Shift(degree) = 0;
+CLKOS_Trim_Option_Rising/Falling = FALLING;
+CLKOS_Trim_Option_Delay = 0;
+CLKOS2_Desired_Phase_Shift(degree) = 0;
+CLKOS3_Desired_Phase_Shift(degree) = 0;
+; End PLL Section

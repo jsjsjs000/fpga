@@ -1,0 +1,18 @@
+#Start recording tcl command: 9/2/2024 23:51:57
+#Project Location: C:/Users/jarsul/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED; Project name: FPGA_CrossLink_LIF_MD6000_DSI_to_OLED
+prj_project new -name "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED" -impl "impl_800x600" -dev LIF-MD6000-6KMG80I -synthesis "synplify"
+prj_project save
+prj_src add "C:/Users/jarsul/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/source/i2c_target_top.v" "C:/Users/jarsul/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/source/mipi2parallel.v" "C:/Users/jarsul/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/source/mipi2parallel_top.v" "C:/Users/jarsul/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/source/synthesis_directives.v"
+sbp_design new -dsgn "ip_cores" -path "C:/Users/jarsul/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores" -device "LIF-MD6000-6KMG80I"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/jarsul/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll"
+source "C:/Users/jarsul/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/jarsul/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll"
+source "C:/Users/jarsul/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll/generate_ngd.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_builder export_add -comp {ip_cores/int_pll}
+sbp_design gen
+prj_src add "C:/Users/jarsul/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/ip_cores.sbx"
+#Stop recording: 9/3/2024 00:21:19

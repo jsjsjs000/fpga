@@ -1,0 +1,1454 @@
+
+synpwrap -msg -prj "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_synplify.tcl" -log "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.srf"
+Copyright (C) 1992-2023 Lattice Semiconductor Corporation. All rights reserved.
+Lattice Diamond Version 3.13.0.56.2
+    <postMsg mid="2011000" type="Info"    dynamic="0" navigation="0"  />
+
+==contents of FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.srf
+#Build: Synplify Pro (R) U-2023.03L-SP1, Build 153R, Aug 10 2023
+#install: C:\lscc\diamond\3.13\synpbase
+#OS: Windows 10 or later
+#Hostname: 2119PC2
+
+# Tue Sep  3 13:25:21 2024
+
+#Implementation: impl_1280x1024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : impl_1280x1024
+Synopsys HDL Compiler, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : impl_1280x1024
+Synopsys Verilog Compiler, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+@I::"C:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v" (library work)
+@I::"C:\lscc\diamond\3.13\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\lscc\diamond\3.13\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\diamond\3.13\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.13\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\synthesis_directives.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\b2p\b2p.v" (library work)
+@N: CG334 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\b2p\b2p.v":36:12:36:24|Read directive translate_off.
+@N: CG333 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\b2p\b2p.v":42:12:42:23|Read directive translate_on.
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\b2p\b2p_byte2pixel_bb.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\int_pll\int_pll.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy.v" (library work)
+@N: CG334 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy.v":142:12:142:24|Read directive translate_off.
+@N: CG333 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy.v":148:12:148:23|Read directive translate_on.
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_wrapper.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_capture_ctrl_bb.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx_wrap_bb.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_rx_global_ctrl_bb.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_soft_dphy_rx_bb.v" (library work)
+@W: CG100 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_soft_dphy_rx_bb.v":47:13:47:25|User defined pragma syn_black_box detected
+
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\ip_cores.v" (library work)
+@N: CG334 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\ip_cores.v":1:13:1:25|Read directive translate_off.
+@N: CG333 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\ip_cores.v":3:13:3:24|Read directive translate_on.
+@W: CG274 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\ip_cores.v":5:0:5:21|Not overridding macro passed from the project (Macro: SBP_SYNTHESIS) - the macro value specified in the project will be used
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v" (library work)
+@I::"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel_top.v" (library work)
+Verilog syntax check successful!
+
+Compiler output is up to date.  No re-compile necessary
+
+Selecting top level module mipi2parallel_top
+@N: CG364 :"C:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v":741:7:741:9|Synthesizing module VHI in library work.
+Running optimization stage 1 on VHI .......
+Finished optimization stage 1 on VHI (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v":745:7:745:9|Synthesizing module VLO in library work.
+Running optimization stage 1 on VLO .......
+Finished optimization stage 1 on VLO (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v":984:7:984:13|Synthesizing module EHXPLLM in library work.
+Running optimization stage 1 on EHXPLLM .......
+Finished optimization stage 1 on EHXPLLM (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\int_pll\int_pll.v":8:7:8:13|Synthesizing module int_pll in library work.
+Running optimization stage 1 on int_pll .......
+@W: CL168 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\int_pll\int_pll.v":23:8:23:21|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+Finished optimization stage 1 on int_pll (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 91MB)
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx_wrap_bb.v":8:7:8:26|Synthesizing module rx_dphy_dphy_rx_wrap in library work.
+@W: CG146 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx_wrap_bb.v":8:7:8:26|Creating black box for empty module rx_dphy_dphy_rx_wrap
+
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_wrapper.v":75:7:75:26|Synthesizing module rx_dphy_dphy_wrapper in library work.
+
+	DPHY_RX_IP=40'b0100110101001001010110000100010101001100
+	RX_GEAR=32'b00000000000000000000000000001000
+	WORD_ALIGN=16'b0100111101001110
+	NUM_RX_LANE=32'b00000000000000000000000000000100
+   Generated name = rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s
+@N: CG364 :"C:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v":1226:7:1226:15|Synthesizing module MIPIDPHYA in library work.
+Running optimization stage 1 on MIPIDPHYA .......
+Finished optimization stage 1 on MIPIDPHYA (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 1 on rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s .......
+Finished optimization stage 1 on rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_rx_global_ctrl_bb.v":8:7:8:28|Synthesizing module rx_dphy_rx_global_ctrl in library work.
+@W: CG146 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_rx_global_ctrl_bb.v":8:7:8:28|Creating black box for empty module rx_dphy_rx_global_ctrl
+
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":53:7:53:21|Synthesizing module rx_dphy_dphy_rx in library work.
+
+	PARSER=16'b0100111101001110
+	RX_TYPE=24'b010001000101001101001001
+	NUM_RX_LANE=32'b00000000000000000000000000000100
+	RX_GEAR=32'b00000000000000000000000000001000
+	DPHY_RX_IP=40'b0100110101001001010110000100010101001100
+	DATA_TYPE=48'b010100100100011101000010001110000011100000111000
+	RX_CLK_MODE=56'b01001000010100110101111101001111010011100100110001011001
+	TX_WAIT_TIME=72'b010011000100010101010011010100110101111100110001001101010100110101010011
+	LANE_ALIGN=16'b0100111101001110
+	WORD_ALIGN=16'b0100111101001110
+	BYTECLK_MHZ=32'b00000000000000000000000000011011
+	SETTLE_CYC=32'b00000000000000000000000000000010
+	FIFO_TYPE=24'b010011000101010101010100
+	DT=6'b111110
+   Generated name = rx_dphy_dphy_rx_Z1
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_capture_ctrl_bb.v":8:7:8:26|Synthesizing module rx_dphy_capture_ctrl in library work.
+@W: CG146 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_capture_ctrl_bb.v":8:7:8:26|Creating black box for empty module rx_dphy_capture_ctrl
+
+@W: CS263 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":388:29:388:45|Port-width mismatch for port lp_hs_state_clk_o. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":199:31:199:51|Removing wire capture_en_pre_parser, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":201:31:201:44|Removing wire bd0_pre_parser, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":202:31:202:44|Removing wire bd1_pre_parser, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":203:31:203:44|Removing wire bd2_pre_parser, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":204:31:204:44|Removing wire bd3_pre_parser, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":206:31:206:38|Removing wire lp_av_en, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":206:41:206:49|Removing wire lp2_av_en, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":207:31:207:37|Removing wire payload, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":208:31:208:51|Removing wire reset_clk_hs_n_sync_w, as there is no assignment to it.
+Running optimization stage 1 on rx_dphy_dphy_rx_Z1 .......
+Finished optimization stage 1 on rx_dphy_dphy_rx_Z1 (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy.v":8:7:8:13|Synthesizing module rx_dphy in library work.
+Running optimization stage 1 on rx_dphy .......
+Finished optimization stage 1 on rx_dphy (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\b2p\b2p_byte2pixel_bb.v":8:7:8:20|Synthesizing module b2p_byte2pixel in library work.
+@W: CG146 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\b2p\b2p_byte2pixel_bb.v":8:7:8:20|Creating black box for empty module b2p_byte2pixel
+
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\b2p\b2p.v":15:7:15:9|Synthesizing module b2p in library work.
+Running optimization stage 1 on b2p .......
+Finished optimization stage 1 on b2p (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v":49:7:49:19|Synthesizing module mipi2parallel in library work.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v":97:21:97:28|Removing wire sp2_en_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v":98:22:98:29|Removing wire lp2_en_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v":99:24:99:34|Removing wire lp2_av_en_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v":100:23:100:27|Removing wire dt2_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v":101:24:101:28|Removing wire wc2_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v":106:20:106:24|Removing wire vc2_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel.v":107:21:107:26|Removing wire ecc2_w, as there is no assignment to it.
+Running optimization stage 1 on mipi2parallel .......
+Finished optimization stage 1 on mipi2parallel (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+@N: CG364 :"C:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v":268:7:268:9|Synthesizing module GSR in library work.
+Running optimization stage 1 on GSR .......
+Finished optimization stage 1 on GSR (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+@N: CG364 :"C:\lscc\diamond\3.13\synpbase\lib\lucent\lifmd.v":677:7:677:9|Synthesizing module PUR in library work.
+Running optimization stage 1 on PUR .......
+Finished optimization stage 1 on PUR (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+@N: CG364 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel_top.v":49:7:49:23|Synthesizing module mipi2parallel_top in library work.
+@W: CG781 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel_top.v":163:18:163:18|Input clk_lp_ctrl_i on instance mipi2parallel_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG360 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel_top.v":105:12:105:22|Removing wire i2c_reg_0_w, as there is no assignment to it.
+Running optimization stage 1 on mipi2parallel_top .......
+@W: CL169 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel_top.v":132:0:132:5|Pruning unused register ref_clk_rst_n_meta_r. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel_top.v":132:0:132:5|Pruning unused register ref_clk_rst_n_sync_r. Make sure that there are no unused intermediate registers.
+Finished optimization stage 1 on mipi2parallel_top (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 92MB)
+Running optimization stage 2 on mipi2parallel_top .......
+@W: CL156 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\source\mipi2parallel_top.v":105:12:105:22|*Input i2c_reg_0_w[0] to expression [and] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+Finished optimization stage 2 on mipi2parallel_top (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on PUR .......
+Finished optimization stage 2 on PUR (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on GSR .......
+Finished optimization stage 2 on GSR (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on mipi2parallel .......
+Finished optimization stage 2 on mipi2parallel (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on b2p .......
+Finished optimization stage 2 on b2p (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on rx_dphy .......
+Finished optimization stage 2 on rx_dphy (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on rx_dphy_dphy_rx_Z1 .......
+@W: CL158 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":95:45:95:50|Inout d0_p_i is unused
+@W: CL158 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":96:45:96:50|Inout d0_n_i is unused
+Finished optimization stage 2 on rx_dphy_dphy_rx_Z1 (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on MIPIDPHYA .......
+Finished optimization stage 2 on MIPIDPHYA (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s .......
+@N: CL159 :"C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_wrapper.v":90:26:90:34|Input reset_n_i is unused.
+Finished optimization stage 2 on rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on int_pll .......
+Finished optimization stage 2 on int_pll (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on EHXPLLM .......
+Finished optimization stage 2 on EHXPLLM (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on VLO .......
+Finished optimization stage 2 on VLO (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on VHI .......
+Finished optimization stage 2 on VHI (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\synwork\layer0.duruntime
+
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 89MB peak: 90MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep  3 13:25:22 2024
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : impl_1280x1024
+Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep  3 13:25:22 2024
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\synwork\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 22MB peak: 23MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep  3 13:25:22 2024
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : impl_1280x1024
+Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+File C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\synwork\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 92MB peak: 92MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Sep  3 13:25:23 2024
+
+###########################################################]
+# Tue Sep  3 13:25:23 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : impl_1280x1024
+Synopsys Lattice Technology Pre-mapping, Version map202303lat, Build 132R, Built Aug 31 2023 04:16:35, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 122MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 136MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_scck.rpt 
+See clock summary report "C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 136MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 136MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 145MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 147MB)
+
+NConnInternalConnection caching is on
+
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 195MB peak: 196MB)
+
+
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 195MB peak: 196MB)
+
+@W: MO129 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\source\mipi2parallel.v":163:0:163:5|Sequential instance mipi2parallel_inst.b2p_reset_pixel_n_meta_r is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\source\mipi2parallel.v":163:0:163:5|Sequential instance mipi2parallel_inst.b2p_reset_pixel_n_sync_r is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\source\mipi2parallel.v":140:0:140:5|Sequential instance mipi2parallel_inst.rx_reset_byte_fr_n_meta_r is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\source\mipi2parallel.v":140:0:140:5|Sequential instance mipi2parallel_inst.rx_reset_byte_fr_n_sync_r is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\source\mipi2parallel.v":151:0:151:5|Sequential instance mipi2parallel_inst.rx_reset_byte_n_meta_r is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\source\mipi2parallel.v":151:0:151:5|Sequential instance mipi2parallel_inst.rx_reset_byte_n_sync_r is reduced to a combinational gate by constant propagation.
+
+Started DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 196MB)
+
+
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 195MB peak: 196MB)
+
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 197MB)
+
+
+mixed edge conversion for GCC is OFF
+
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 197MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 197MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 198MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=20 on top level netlist mipi2parallel_top 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 198MB)
+
+
+
+Clock Summary
+******************
+
+          Start      Requested     Requested     Clock      Clock               Clock
+Level     Clock      Frequency     Period        Type       Group               Load 
+-------------------------------------------------------------------------------------
+0 -       System     200.0 MHz     5.000         system     system_clkgroup     0    
+=====================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+           Clock     Source     Clock Pin       Non-clock Pin     Non-clock Pin
+Clock      Load      Pin        Seq Example     Seq Example       Comb Example 
+-------------------------------------------------------------------------------
+System     0         -          -               -                 -            
+===============================================================================
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+
+Summary of user generated gated clocks:
+0 user generated gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 198MB peak: 198MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 198MB peak: 199MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 199MB peak: 199MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 114MB peak: 200MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Tue Sep  3 13:25:26 2024
+
+###########################################################]
+# Tue Sep  3 13:25:26 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: 2119PC2
+
+Implementation : impl_1280x1024
+Synopsys Lattice Technology Mapper, Version map202303lat, Build 132R, Built Aug 31 2023 04:16:35, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 122MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 136MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 136MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 194MB)
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 197MB peak: 197MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 198MB peak: 198MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 198MB peak: 198MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+NConnInternalConnection caching is on
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 198MB peak: 198MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 198MB peak: 198MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 198MB peak: 198MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 198MB peak: 198MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 198MB peak: 199MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 199MB peak: 199MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		     4.14ns		   2 /         0
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 199MB peak: 199MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 199MB peak: 199MB)
+
+
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 200MB peak: 200MB)
+
+
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 200MB peak: 200MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 200MB)
+
+Writing Analyst data base C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\synwork\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 200MB peak: 200MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_1280x1024\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 208MB peak: 208MB)
+
+
+Finished Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:03s; Memory used current: 208MB peak: 209MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 208MB peak: 209MB)
+
+@W: MT246 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\ip_cores\ip_cores\b2p\b2p.v":46:4:46:21|Blackbox b2p_byte2pixel is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":423:8:423:24|Blackbox rx_dphy_capture_ctrl is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":349:0:349:18|Blackbox rx_dphy_rx_global_ctrl is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_rx.v":254:0:254:16|Blackbox rx_dphy_dphy_rx_wrap is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\ip_cores\ip_cores\rx_dphy\rx_dphy_dphy_wrapper.v":171:8:171:17|Blackbox MIPIDPHYA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\p2119\desktop\fpga_crosslink_lif_md6000_dsi_to_oled\impl_1280x1024\ip_cores\ip_cores\int_pll\int_pll.v":59:12:59:20|Blackbox EHXPLLM is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Tue Sep  3 13:25:29 2024
+#
+
+
+Top view:               mipi2parallel_top
+Requested Frequency:    200.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 4.140
+
+                   Requested     Estimated      Requested     Estimated               Clock      Clock          
+Starting Clock     Frequency     Frequency      Period        Period        Slack     Type       Group          
+----------------------------------------------------------------------------------------------------------------
+System             200.0 MHz     1162.3 MHz     5.000         0.860         4.140     system     system_clkgroup
+================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+System    System  |  5.000       4.140  |  No paths    -      |  No paths    -      |  No paths    -    
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                  Starting                                                                        Arrival          
+Instance                                                                          Reference     Type                       Pin                Net                 Time        Slack
+                                                                                  Clock                                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.rx_global_ctrl_inst                  System        rx_dphy_rx_global_ctrl     hs_d0_en_o         hs_d_en_o           0.000       4.140
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.rx_global_ctrl_inst                  System        rx_dphy_rx_global_ctrl     hs_settle_en_o     hs_settle_en_w      0.000       4.140
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA                  CLKDRXLPN          lp_clk_rx_n         0.000       5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA                  CLKDRXLPP          lp_clk_rx_p         0.000       5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA                  CLKHSBYTE          clk_byte_hs_w       0.000       5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA                  D0DRXLPN           lp_d0_rx_n_o        0.000       5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA                  D0DRXLPP           lp_d0_rx_p_o        0.000       5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA                  D0ERRSYNC          d_sote_det_w[0]     0.000       5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA                  D0HSRXDATA0        bd0_w[0]            0.000       5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA                  D0HSRXDATA1        bd0_w[1]            0.000       5.000
+===================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                  Starting                                                           Required          
+Instance                                                                          Reference     Type          Pin             Net                    Time         Slack
+                                                                                  Clock                                                                                
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     D0HSDESEREN     un1_hs_settle_en_i     5.000        4.140
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     D1HSDESEREN     un1_hs_settle_en_i     5.000        4.140
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     D2HSDESEREN     un1_hs_settle_en_i     5.000        4.140
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     D3HSDESEREN     un1_hs_settle_en_i     5.000        4.140
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     CLKRXHSEN       term_clk_en_o          5.000        5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     D0RXHSEN        term_d0_en_w           5.000        5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     D1RXHSEN        term_d0_en_w           5.000        5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     D2RXHSEN        term_d0_en_w           5.000        5.000
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy     System        MIPIDPHYA     D3RXHSEN        term_d0_en_w           5.000        5.000
+int_pll_inst.PLLInst_0                                                            System        EHXPLLM       CLKFB           CLKOP                  5.000        5.000
+=======================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         5.000
+
+    - Propagation time:                      0.860
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     4.140
+
+    Number of logic level(s):                1
+    Starting point:                          mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.rx_global_ctrl_inst / hs_d0_en_o
+    Ending point:                            mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy / D0HSDESEREN
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                                                                       Pin             Pin               Arrival     No. of    
+Name                                                                                      Type                       Name            Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.rx_global_ctrl_inst                          rx_dphy_rx_global_ctrl     hs_d0_en_o      Out     0.000     0.000 r     -         
+hs_d_en_o                                                                                 Net                        -               -       -         -           5         
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.un1_hs_settle_en_i     ORCALUT4                   A               In      0.000     0.000 r     -         
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.un1_hs_settle_en_i     ORCALUT4                   Z               Out     0.860     0.860 r     -         
+un1_hs_settle_en_i                                                                        Net                        -               -       -         -           4         
+mipi2parallel_inst.rx_dphy_inst.dphy_rx_inst.u_dphy_wrapper.MIXEL\.mixel_dphy             MIPIDPHYA                  D0HSDESEREN     In      0.000     0.860 r     -         
+=============================================================================================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 209MB peak: 209MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 209MB peak: 209MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lif_md6000-6
+
+Register bits: 0 of 5600 (0%)
+PIC Latch:       0
+I/O cells:       30
+
+
+Details:
+EHXPLLM:        1
+GSR:            1
+IB:             2
+INV:            1
+MIPIDPHYA:      1
+OB:             28
+ORCALUT4:       1
+PUR:            1
+VHI:            7
+VLO:            7
+b2p_byte2pixel: 1
+rx_dphy_capture_ctrl: 1
+rx_dphy_dphy_rx_wrap: 1
+rx_dphy_rx_global_ctrl: 1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 69MB peak: 209MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Tue Sep  3 13:25:30 2024
+
+###########################################################]
+
+
+Synthesis exit by 0.
+
+edif2ngd  -l "LIFMD" -d LIF-MD6000 -path "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024" -path "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED"   "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.edi" "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ngo"   
+edif2ngd:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="NUM_RX_LANE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="WORD_ALIGN"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="RX_GEAR"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="DPHY_RX_IP"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="DPHY_RX_IP"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="RX_GEAR"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="WORD_ALIGN"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="NUM_RX_LANE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="FIFO_TYPE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="SETTLE_CYC"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="BYTECLK_MHZ"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="WORD_ALIGN"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="LANE_ALIGN"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="TX_WAIT_TIME"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="RX_CLK_MODE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="DATA_TYPE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="DPHY_RX_IP"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="RX_GEAR"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="NUM_RX_LANE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="RX_TYPE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="PARSER"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="PARSER"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="RX_TYPE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="NUM_RX_LANE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="RX_GEAR"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="DPHY_RX_IP"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="RX_CLK_MODE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="LANE_ALIGN"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="WORD_ALIGN"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="BYTECLK_MHZ"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="FIFO_TYPE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="FIFO_TYPE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="BYTECLK_MHZ"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="LANE_ALIGN"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="RX_CLK_MODE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="WORD_ALIGN"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="DPHY_RX_IP"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="RX_TYPE"  />
+    <postMsg mid="1121028" type="Warning" dynamic="1" navigation="0" arg0="PARSER"  />
+Writing the design to FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ngo...
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 11 MB
+
+
+ngdbuild  -a "LIFMD" -d LIF-MD6000  -p "C:/lscc/diamond/3.13/ispfpga/sn5w00/data"  -p "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024" -p "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED" -p "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/b2p" -p "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/rx_dphy"  "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ngo" "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ngd"  	
+ngdbuild:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ngo' ...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/sn5w00/data/sn5wlib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGO design 'C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/b2p/b2p_byte2pixel.ngo'...
+Loading NGO design 'C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/b2p/pmi_ram_dplbnonessdr48384838p1329f73b.ngo'...
+Loading NGO design 'C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy_dphy_rx_wrap.ngo'...
+Loading NGO design 'C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/rx_dphy/pmi_fifollr130448pceef079_2.ngo'...
+Loading NGO design 'C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/rx_dphy/pmi_fifollr130448pceef079.ngo'...
+Loading NGO design 'C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/rx_dphy/pmi_fifollr130448pceef079_0.ngo'...
+Loading NGO design 'C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/rx_dphy/pmi_fifollr130448pceef079_1.ngo'...
+Loading NGO design 'C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/rx_dphy/pmi_fifo_dcllar11501616163232p11a7bfdb.ngo'...
+Loading NGO design 'C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy_rx_global_ctrl.ngo'...
+Loading NGO design 'C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/ip_cores/ip_cores/rx_dphy/rx_dphy_capture_ctrl.ngo'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/cd_clk_o" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/cd_clk_o"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_6" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_6"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_8" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_8"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_9" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_9"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/cd_d0_p" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/cd_d0_p"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/cd_d0_n" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/cd_d0_n"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_22" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_22"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_23" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_23"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_24" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_24"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_25" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_25"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_26" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_26"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_27" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_27"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_55" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_55"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_56" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_56"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_40" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_40"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_28" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_28"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_4" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_4"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_5" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_5"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_46" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_46"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_7" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_7"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_35" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_35"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_45" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_45"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_37" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_37"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_11" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_11"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_12" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_12"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_36" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_36"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_38" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_38"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_39" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_39"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_42" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_42"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_47" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_47"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_30" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_30"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_31" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_31"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_57" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_57"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_58" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_58"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_2" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_2"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_3" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_3"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_1" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_48" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_48"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_17" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_17"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_18" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_18"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_49" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_49"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_41" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_41"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_29" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_29"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_43" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_43"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_44" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_44"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_33" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_33"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_19" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_19"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_20" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_20"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_21" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_21"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_50" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_50"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_34" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_mixel_dphy_34"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/lp_en_o" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/lp_en_o"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[0]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[1]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[1]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[2]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[2]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[3]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[3]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[4]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[4]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[5]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[5]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[6]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[6]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[7]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[7]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[8]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[8]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[9]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[9]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[10]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[10]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[11]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[11]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[12]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[12]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[13]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[13]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[14]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[14]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[15]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[15]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[16]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[16]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[17]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[17]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[18]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[18]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[19]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[19]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[20]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[20]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[21]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[21]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[22]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[22]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[23]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[23]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[24]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[24]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[25]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[25]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[26]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[26]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[27]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[27]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[28]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[28]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[29]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[29]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[30]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[30]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[31]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/bd_o[31]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/vc_o[0]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/vc_o[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/vc_o[1]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/vc_o[1]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc_o[0]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc_o[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc_o[1]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc_o[1]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc_o[2]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc_o[2]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc_o[3]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc_o[3]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc_o[4]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc_o[4]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc_o[5]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc_o[5]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc_o[6]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc_o[6]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc_o[7]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc_o[7]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc2_o[0]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/ecc2_o[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/lp_clk_rx_p" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/lp_clk_rx_p"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/lp_clk_rx_n" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/lp_clk_rx_n"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/term_d1_en_temp_w" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/term_d1_en_temp_w"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/term_d2_en_temp_w" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/term_d2_en_temp_w"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/term_d3_en_temp_w" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/term_d3_en_temp_w"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/lp_hs_state_clk_o[0]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/lp_hs_state_clk_o[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/d_sot_det_w[0]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/d_sot_det_w[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/d_sot_det_w[1]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/d_sot_det_w[1]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/d_sot_det_w[2]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/d_sot_det_w[2]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/d_sot_det_w[3]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/d_sot_det_w[3]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/d_sote_det_w[0]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/d_sote_det_w[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/d_sote_det_w[1]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/d_sote_det_w[1]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/d_sote_det_w[2]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/d_sote_det_w[2]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/d_sote_det_w[3]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/d_sote_det_w[3]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/b2p_inst/p_odd_o[0]" arg2="mipi2parallel_inst/b2p_inst/p_odd_o[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/GND" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/GND"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/un1_l_align_fifo_3_3" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/un1_l_align_fifo_3_3"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/un1_l_align_fifo_3" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/un1_l_align_fifo_3"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/un1_l_align_fifo_2_3" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/un1_l_align_fifo_2_3"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/un1_l_align_fifo_2_1" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/un1_l_align_fifo_2_1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/un1_l_align_fifo_1_3" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/un1_l_align_fifo_1_3"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/un1_l_align_fifo_1" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/un1_l_align_fifo_1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/AlmostEmpty" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/AlmostEmpty"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/AlmostFull" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/AlmostFull"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/almostfull_0" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/almostfull_0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/lp_hs_state_clk_o[0]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/lp_hs_state_clk_o[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/capture_ctrl_inst.capture_ctrl_inst/ecc2_o[0]" arg2="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/capture_ctrl_inst.capture_ctrl_inst/ecc2_o[0]"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="123"  />
+
+Design Results:
+   2749 blocks expanded
+Complete the first expansion.
+Writing 'FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ngd' ...
+Total CPU Time: 1 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 43 MB
+
+
+map -a "LIFMD" -p LIF-MD6000 -t CKFBGA80 -s 6 -oc Industrial   "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ngd" -o "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_map.ncd" -pr "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.prf" -mp "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.mrp" -lpf "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_synplify.lpf" -lpf "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_1280x1024/impl_1280x1024.lpf"             
+map:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ngd
+   Picdevice="LIF-MD6000"
+
+   Pictype="CKFBGA80"
+
+   Picspeed=6
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LIF-MD6000CKFBGA80, Performance used: 6.
+
+Loading device for application map from file 'sn5w6000.nph' in environment: C:/lscc/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.38.
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+    <postMsg mid="51001030" type="Warning" dynamic="1" navigation="0" arg0="mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/hs_entry"  />
+
+
+
+Design Summary:
+   Number of registers:      1 out of  6047 (0%)
+      PFU registers:            1 out of  5936 (0%)
+      PIO registers:            0 out of   111 (0%)
+   Number of SLICEs:       112 out of  2968 (4%)
+      SLICEs as Logic/ROM:    112 out of  2968 (4%)
+      SLICEs as RAM:            0 out of  2226 (0%)
+      SLICEs as Carry:          0 out of  2968 (0%)
+   Number of LUT4s:        167 out of  5936 (3%)
+      Number used as logic LUTs:        167
+      Number used as distributed RAM:     0
+      Number used as ripple logic:        0
+      Number used as shift registers:     0
+   Number of PIO sites used: 30 out of 37 (81%)
+   Number of block RAMs:  3 out of 20 (15%)
+   Number of GSRs:  1 out of 1 (100%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   DTR used :   No
+   Number of Power Management Unit (PMU):  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 2 (0%)
+   Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 2 (0%)
+   Number of DCC:  0 out of 14 (0%)
+   Number of DCS:  0 out of 1 (0%)
+   Number of PLLs:  1 out of 1 (100%)
+   Number of DDRDLLs:  0 out of 2 (0%)
+   Number of CLKDIV:  0 out of 4 (0%)
+   Number of ECLKSYNC:  0 out of 4 (0%)
+   Number of MIPIDPHY:  1 out of 2 (50%)
+   Number of I2C:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  7
+     Net ref_clk_i_c: 1 loads, 1 rising, 0 falling (Driver: PIO ref_clk_i )
+     Net clk_pixel_o_c: 3 loads, 3 rising, 0 falling (Driver: int_pll_inst/PLLInst_0 )
+     Net mipi2parallel_inst/clk_byte_hs_w: 3 loads, 3 rising, 0 falling (Driver: mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy )
+     Net mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o: 1 loads, 1 rising, 0 falling (Driver: mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy )
+     Net int_pll_inst/CLKOP: 1 loads, 1 rising, 0 falling (Driver: int_pll_inst/PLLInst_0 )
+     Net clk_n_io: 0 loads, 0 rising, 0 falling (No Driver)
+     Net clk_p_io: 0 loads, 0 rising, 0 falling (No Driver)
+   Number of Clock Enables:  3
+     Net mipi2parallel_inst/b2p_inst/byte2pixel_wrapper/byte2pixel/un1_mem_rd_rdy_r: 6 loads, 0 LSLICEs
+     Net mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_hs_settle_en_i: 4 loads, 0 LSLICEs
+     Net mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/term_d0_en_w: 4 loads, 0 LSLICEs
+   Number of local set/reset loads for net mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/hs_entry merged into GSR:  1
+   Number of LSRs:  1
+     Net reset_n_i_c_i: 1 loads, 0 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net mipi2parallel_inst/b2p_inst/byte2pixel_wrapper/byte2pixel/un1_mem_rd_rdy_r: 6 loads
+     Net mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/term_d0_en_w: 4 loads
+     Net mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/un1_hs_settle_en_i: 4 loads
+     Net mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/hs_d_en_o: 2 loads
+     Net mipi2parallel_inst/b2p_inst/byte2pixel_wrapper/byte2pixel/N_118: 1 loads
+     Net mipi2parallel_inst/b2p_inst/byte2pixel_wrapper/byte2pixel/N_119: 1 loads
+     Net mipi2parallel_inst/b2p_inst/byte2pixel_wrapper/byte2pixel/N_120: 1 loads
+     Net mipi2parallel_inst/b2p_inst/byte2pixel_wrapper/byte2pixel/N_121: 1 loads
+     Net mipi2parallel_inst/b2p_inst/byte2pixel_wrapper/byte2pixel/N_122: 1 loads
+     Net mipi2parallel_inst/b2p_inst/byte2pixel_wrapper/byte2pixel/N_123: 1 loads
+ 
+
+   Number of warnings:  1
+   Number of errors:    0
+
+
+
+Total CPU Time: 1 secs  
+Total REAL Time: 2 secs  
+Peak Memory Usage: 62 MB
+
+Dumping design to file FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_map.ncd.
+
+mpartrce -p "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.p2t" -f "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.p3t" -tf "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.pt" "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_map.ncd" "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_map.ncd"
+Tue Sep 03 13:25:35 2024
+
+PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/promote.xml -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:SLVS_MIPI_LVCMOS_OUTPUT=0 FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_map.ncd FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.dir/5_1.ncd FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.prf
+Preference file: FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_map.ncd.
+Design name: mipi2parallel_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LIF-MD6000
+Package:     CKFBGA80
+Performance: 6
+Loading device for application par from file 'sn5w6000.nph' in environment: C:/lscc/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.38.
+Performance Hardware Data Status:   Final          Version 41.1.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)      30/39           76% used
+                     30/37           81% bonded
+
+   SLICE            112/2968          3% used
+
+   GSR                1/1           100% used
+   EBR                3/20           15% used
+   PLL                1/1           100% used
+   MIPIDPHY           1/2            50% used
+   ABPIO             10/20           50% used
+
+
+Number of Signals: 186
+Number of Connections: 336
+
+Pin Constraint Summary:
+   30 out of 30 pins locked (100% locked).
+
+INFO: CLKI 'ref_clk_i' at E1 driving 'int_pll_inst/PLLInst_0' must use PCLK.
+The following 4 signals are selected to use the primary clock routing resources:
+    mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o (driver: mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy, clk/ce/sr load #: 1/0/0)
+    mipi2parallel_inst/clk_byte_hs_w (driver: mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy, clk/ce/sr load #: 3/0/0)
+    clk_pixel_o_c (driver: int_pll_inst/PLLInst_0, clk/ce/sr load #: 3/0/0)
+    ref_clk_i_c (driver: ref_clk_i, clk/ce/sr load #: 1/0/0)
+
+
+Signal mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/hs_entry is selected as Global Set/Reset.
+Starting Placer Phase 0.
+..........
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+....................
+Placer score = 20210.
+Finished Placer Phase 1.  REAL time: 3 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  20078
+Finished Placer Phase 2.  REAL time: 3 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 6 (0%)
+  GR_PCLK    : 1 out of 2 (50%)
+  PLL        : 1 out of 1 (100%)
+  DCS        : 0 out of 1 (0%)
+  DCC        : 0 out of 14 (0%)
+  CLKDIV     : 0 out of 4 (0%)
+  MIPIDPHY   : 1 out of 2 (50%)
+
+Quadrant TL Clocks:
+
+Quadrant TR Clocks:
+
+Quadrant BL Clocks:
+
+Quadrant BR Clocks:
+
+Edge Clocks:
+
+  No edge clock selected.
+
+
+--------------- End of Clock Report ---------------
+
+
+_
+I/O Usage Summary (final):
+   30 out of 39 (76.9%) PIO sites used.
+   30 out of 37 (81.1%) bonded PIO sites used.
+   Number of PIO comps: 30; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+------------+------------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+----------------+------------+------------+------------+
+| 0        | 0 / 7 (  0%)   | -          | -          | -          |
+| 1        | 14 / 14 (100%) | 1.8V       | -          | -          |
+| 2        | 16 / 16 (100%) | 1.8V       | -          | -          |
++----------+----------------+------------+------------+------------+
+
+Total placer CPU time: 3 secs 
+
+Dumping design to file FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.dir/5_1.ncd.
+
+0 connections routed; 336 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 4 secs 
+
+Start NBR router at 13:25:39 09/03/24
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 13:25:39 09/03/24
+
+Start NBR section for initial routing at 13:25:39 09/03/24
+Level 4, iteration 1
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 35.600ns/0.000ns; real time: 4 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 13:25:39 09/03/24
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 35.600ns/0.000ns; real time: 4 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 13:25:39 09/03/24
+Level 4, iteration 0
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<hold >: 0.105ns/0.000ns; real time: 4 secs 
+Level 4, iteration 0
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 35.198ns/0.000ns; real time: 4 secs 
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 35.198ns/0.000ns; real time: 4 secs 
+
+Start NBR section for re-routing at 13:25:39 09/03/24
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 35.218ns/0.000ns; real time: 4 secs 
+
+Start NBR section for post-routing at 13:25:39 09/03/24
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 35.218ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 4 secs 
+Total REAL time: 5 secs 
+Completely routed.
+End of route.  336 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 35.218
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.110
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 4 secs 
+Total REAL time to completion: 5 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.pt" -o "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.twr" "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ncd" "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.prf"
+trce:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file fpga_crosslink_lif_md6000_dsi_to_oled_impl_1280x1024.ncd.
+Design name: mipi2parallel_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LIF-MD6000
+Package:     CKFBGA80
+Performance: 6
+Loading device for application trce from file 'sn5w6000.nph' in environment: C:/lscc/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.38.
+Performance Hardware Data Status:   Final          Version 41.1.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Tue Sep 03 13:25:41 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.twr -gui -msgset C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/promote.xml FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ncd FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.prf 
+Design file:     fpga_crosslink_lif_md6000_dsi_to_oled_impl_1280x1024.ncd
+Preference file: fpga_crosslink_lif_md6000_dsi_to_oled_impl_1280x1024.prf
+Device,speed:    LIF-MD6000,6
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 1 paths, 4 nets, and 334 connections (99.40% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Tue Sep 03 13:25:41 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.twr -gui -msgset C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/promote.xml FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ncd FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.prf 
+Design file:     fpga_crosslink_lif_md6000_dsi_to_oled_impl_1280x1024.ncd
+Preference file: fpga_crosslink_lif_md6000_dsi_to_oled_impl_1280x1024.prf
+Device,speed:    LIF-MD6000,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 1 paths, 4 nets, and 334 connections (99.40% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 52 MB
+
+
+tmcheck -par "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.par" 
+
+bitgen -w "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ncd" -f "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.t2b"  "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.13.0.56.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ncd.
+Design name: mipi2parallel_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LIF-MD6000
+Package:     CKFBGA80
+Performance: 6
+Loading device for application Bitgen from file 'sn5w6000.nph' in environment: C:/lscc/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.38.
+Performance Hardware Data Status:   Final          Version 41.1.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.prf.
+    <postMsg mid="1009992" type="Info"    dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by sn5w00.acd ###"  />
+    <postMsg mid="1009992" type="Info"    dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK"  />
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                        DONE_EX  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                            6**  |
++---------------------------------+---------------------------------+
+|                             ES  |                           No**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                     DisableUES  |                        FALSE**  |
++---------------------------------+---------------------------------+
+|                        TRANSFR  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                     CDONE_PORT  |                CDONE_USER_IO**  |
++---------------------------------+---------------------------------+
+|               BOOT_UP_SEQUENCE  |                         NVCM**  |
++---------------------------------+---------------------------------+
+|          ONE_TIME_PROGRAM_SRAM  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|          ONE_TIME_PROGRAM_NVCM  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SECURITY_SRAM  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SECURITY_NVCM  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 4.9.
+ 
+Saving bit stream in "FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.bit".
+Total CPU Time: 1 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 78 MB

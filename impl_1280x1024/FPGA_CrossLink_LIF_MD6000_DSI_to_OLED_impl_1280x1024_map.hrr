@@ -1,0 +1,241 @@
+---------------------------------------------------
+Report for cell mipi2parallel_top
+   Instance path: mipi2parallel_top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     112.00        100.0
+                                  LUT4	     167.00        100.0
+                                 IOBUF	         30        100.0
+                                PFUREG	          1        100.0
+                                   EBR	          3        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               int_pll	          1         0.9
+                         mipi2parallel	          1        48.2
+---------------------------------------------------
+Report for cell mipi2parallel
+   Instance path: mipi2parallel_top/mipi2parallel_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      54.00        48.2
+                                  LUT4	      54.00        32.3
+                                PFUREG	          1        100.0
+                                   EBR	          3        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               rx_dphy	          1         4.5
+                                   b2p	          1        43.8
+---------------------------------------------------
+Report for cell b2p
+   Instance path: mipi2parallel_top/mipi2parallel_inst/b2p_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      49.00        43.8
+                                  LUT4	      49.00        29.3
+                                   EBR	          3        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                        b2p_byte2pixel	          1        43.8
+---------------------------------------------------
+Report for cell b2p_byte2pixel
+   Instance path: mipi2parallel_top/mipi2parallel_inst/b2p_inst/byte2pixel_wrapper
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      49.00        43.8
+                                  LUT4	      49.00        29.3
+                                   EBR	          3        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                         byte2pixel_Z2	          1        43.8
+---------------------------------------------------
+Report for cell byte2pixel_Z2
+   Instance path: mipi2parallel_top/mipi2parallel_inst/b2p_inst/byte2pixel_wrapper/byte2pixel
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      49.00        43.8
+                                  LUT4	      49.00        29.3
+                                   EBR	          3        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+ pmi_ram_dpLbnonessdr48384838p1329f73b	          1         0.0
+---------------------------------------------------
+Report for cell pmi_ram_dpLbnonessdr48384838p1329f73b
+   Instance path: mipi2parallel_top/mipi2parallel_inst/b2p_inst/byte2pixel_wrapper/byte2pixel/pix_mem
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          3        100.0
+---------------------------------------------------
+Report for cell rx_dphy
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.00         4.5
+                                  LUT4	       5.00         3.0
+                                PFUREG	          1        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                    rx_dphy_dphy_rx_Z1	          1         4.5
+---------------------------------------------------
+Report for cell rx_dphy_dphy_rx_Z1
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.00         4.5
+                                  LUT4	       5.00         3.0
+                                PFUREG	          1        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                  rx_dphy_capture_ctrl	          1         0.0
+                rx_dphy_rx_global_ctrl	          1         3.6
+   rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s	          1         0.9
+                  rx_dphy_dphy_rx_wrap	          1         0.0
+---------------------------------------------------
+Report for cell rx_dphy_dphy_wrapper_MIXEL_8s_ON_4s
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.9
+                                  LUT4	       1.00         0.6
+---------------------------------------------------
+Report for cell rx_dphy_dphy_rx_wrap
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                       dphy_rx_wrap_Z1	          1         0.0
+---------------------------------------------------
+Report for cell dphy_rx_wrap_Z1
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+word_align_MIXEL_8s_4s_27s_37037s_27774s_0s_184	          1         0.0
+rx_fifo_SINGLE_4s_8s_LIFMD_16s_4s_LUT_1s_1s_DC	          1         0.0
+               lane_align_4s_8s_4s_LUT	          1         0.0
+---------------------------------------------------
+Report for cell lane_align_4s_8s_4s_LUT
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+           pmi_fifoLLr130448pceef079_2	          1         0.0
+           pmi_fifoLLr130448pceef079_0	          1         0.0
+           pmi_fifoLLr130448pceef079_1	          1         0.0
+             pmi_fifoLLr130448pceef079	          1         0.0
+---------------------------------------------------
+Report for cell pmi_fifoLLr130448pceef079_2
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/l_align_fifo_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell pmi_fifoLLr130448pceef079
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/genblk3.l_align_fifo_3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell pmi_fifoLLr130448pceef079_0
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/genblk2.l_align_fifo_2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell pmi_fifoLLr130448pceef079_1
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/LANE_ALIGN_ON.l_align/genblk1.l_align_fifo_1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell word_align_MIXEL_8s_4s_27s_37037s_27774s_0s_184
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/WORD_ALIGN_ON.w_align
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell rx_fifo_SINGLE_4s_8s_LIFMD_16s_4s_LUT_1s_1s_DC
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                     rx_fifo_single_Z2	          1         0.0
+---------------------------------------------------
+Report for cell rx_fifo_single_Z2
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+pmi_fifo_dcLLar11501616163232p11a7bfdb	          1         0.0
+---------------------------------------------------
+Report for cell pmi_fifo_dcLLar11501616163232p11a7bfdb
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/dphy_rx_wrap_inst/dsi_rx/RX_FIFO_ON.u_rx_fifo/rx_fifo_single.rx_fifo_single_inst/dual_clk_mode.fr_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell rx_dphy_rx_global_ctrl
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.00         3.6
+                                  LUT4	       4.00         2.4
+                                PFUREG	          1        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+rx_global_ctrl_4s_8s_27s_OFF_HS_ONLY_3s_37s_3s	          1         3.6
+---------------------------------------------------
+Report for cell rx_global_ctrl_4s_8s_27s_OFF_HS_ONLY_3s_37s_3s
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.00         3.6
+                                  LUT4	       4.00         2.4
+                                PFUREG	          1        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            lp_hs_ctrl	          1         0.0
+                          lp_hs_ctrl_3	          1         3.6
+                          lp_hs_ctrl_4	          1         0.0
+                          lp_hs_ctrl_2	          1         0.0
+---------------------------------------------------
+Report for cell lp_hs_ctrl_4
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_CONTROL_LANE_3.lp_hs_ctrl_d3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell lp_hs_ctrl_2
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_CONTROL_LANE_2.lp_hs_ctrl_d2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell lp_hs_ctrl
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/HSLP_CONTROL_LANE_1.lp_hs_ctrl_d1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell lp_hs_ctrl_3
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.00         3.6
+                                  LUT4	       4.00         2.4
+                                PFUREG	          1        100.0
+---------------------------------------------------
+Report for cell rx_dphy_capture_ctrl
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/capture_ctrl_inst.capture_ctrl_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                       capture_ctrl_Z1	          1         0.0
+---------------------------------------------------
+Report for cell capture_ctrl_Z1
+   Instance path: mipi2parallel_top/mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/capture_ctrl_inst.capture_ctrl_inst/capture_ctrl
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell int_pll
+   Instance path: mipi2parallel_top/int_pll_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.9
+                                  LUT4	       1.00         0.6

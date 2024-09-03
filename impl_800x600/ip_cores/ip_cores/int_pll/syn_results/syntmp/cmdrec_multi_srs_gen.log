@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe  -link  -top  int_pll  -multisrs  C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\int_pll\syn_results\synwork\int_pll_comp.srs  -osyn  C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\int_pll\syn_results\synwork\int_pll_mult.srs  -log  C:\Users\p2119\Desktop\FPGA_CrossLink_LIF_MD6000_DSI_to_OLED\impl_800x600\ip_cores\ip_cores\int_pll\syn_results\synlog\int_pll_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\..\..\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe -link -top int_pll -multisrs ..\synwork\int_pll_comp.srs -osyn ..\synwork\int_pll_mult.srs -log ..\synlog\int_pll_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\int_pll_comp.srs|io:i|time:1725356523|size:5203|exec:0|csum:F87635CCFE86D9A0C603B5D5FDD281DC
+file:..\synwork\int_pll_mult.srs|io:o|time:1725356525|size:4950|exec:0|csum:
+file:..\synlog\int_pll_multi_srs_gen.srr|io:o|time:1725356525|size:1210|exec:0|csum:
+file:..\..\..\..\..\..\..\..\..\..\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe|io:i|time:1691657656|size:10600960|exec:1|csum:6BAEBE966B12EE4A1CCC452B6603E0B1

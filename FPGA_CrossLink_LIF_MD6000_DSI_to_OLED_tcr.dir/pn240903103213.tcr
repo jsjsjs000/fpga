@@ -1,0 +1,30 @@
+#Start recording tcl command: 9/3/2024 09:50:24
+#Project Location: C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED; Project name: FPGA_CrossLink_LIF_MD6000_DSI_to_OLED
+prj_project open "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED.ldf"
+prj_src add "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/testbench/mipi2parallel_MD_tb.v" "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/testbench/simulation_directives.v"
+sbp_design open -dsgn "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/ip_cores.sbx"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll"
+source "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll"
+source "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll/generate_ngd.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_builder export_add -port {ip_cores/int_pll/LOCK}
+sbp_builder export_add -port {ip_cores/int_pll/RST}
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/rx_dphy"
+source "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/rx_dphy/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_builder export_add -comp {ip_cores/rx_dphy}
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/b2p"
+source "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/b2p/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_builder export_add -comp {ip_cores/b2p}
+sbp_design gen
+prj_run Synthesis -impl impl_800x600 -task Synplify_Synthesis
+sbp_design gen
+prj_run Synthesis -impl impl_800x600 -task Synplify_Synthesis
+#Stop recording: 9/3/2024 10:32:13

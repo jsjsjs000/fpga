@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="2" update_time="1725362740"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1725362740"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="1725362740"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1725362743"/>
+            <Task name="Jedecgen" build_result="0" update_result="2" update_time="1725362740"/>
+            <Task name="Promgen" build_result="0" update_result="2" update_time="1725362741"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1725362735">
+            <Task name="Map" build_result="2" update_result="0" update_time="1725362735"/>
+            <Task name="MapTrace" build_result="0" update_result="2" update_time="1725362735"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1725362735"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1725362735"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1725362740">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1725362740"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1725362741"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1725362731">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1725362731"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1725360556"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1725360556"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="1725362733"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="1725362733"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="1725362733"/>
+        </Milestone>
+        <Milestone name="Translate" build_result="2" build_time="1725362733">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1725362733"/>
+        </Milestone>
+        <Report name="FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.bgn" last_build_time="1725362743" last_build_size="4259"/>
+        <Report name="FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.bit" last_build_time="1725362743" last_build_size="163525"/>
+        <Report name="FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.edi" last_build_time="1725362729" last_build_size="180773"/>
+        <Report name="FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ncd" last_build_time="1725362740" last_build_size="220448"/>
+        <Report name="FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ngd" last_build_time="1725362733" last_build_size="1674600"/>
+        <Report name="FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.twr" last_build_time="1725362741" last_build_size="18349"/>
+        <Report name="FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024_map.ncd" last_build_time="1725362735" last_build_size="182817"/>
+    </Strategy>
+</BuildStatus>
+                                                                                                                              

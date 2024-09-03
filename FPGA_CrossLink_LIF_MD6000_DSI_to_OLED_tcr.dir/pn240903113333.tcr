@@ -1,0 +1,30 @@
+#Start recording tcl command: 9/3/2024 10:32:27
+#Project Location: C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED; Project name: FPGA_CrossLink_LIF_MD6000_DSI_to_OLED
+prj_project open "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED.ldf"
+sbp_design open -dsgn "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/ip_cores.sbx"
+sbp_design gen
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll"
+source "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll"
+source "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/ip_cores/ip_cores/int_pll/generate_ngd.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_design gen
+sbp_builder export_add -port {ip_cores/int_pll/CLKOS}
+sbp_design save
+sbp_design gen
+sbp_design gen
+prj_run Synthesis -impl impl_800x600 -task Synplify_Synthesis
+prj_src exclude "C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/impl_800x600/source/i2c_target_top.v"
+prj_run Synthesis -impl impl_800x600 -task Synplify_Synthesis
+prj_run Synthesis -impl impl_800x600 -task Synplify_Synthesis
+prj_run Export -impl impl_800x600
+prj_run Export -impl impl_800x600 -forceOne
+prj_run PAR -impl impl_800x600
+prj_run Synthesis -impl impl_800x600 -task Synplify_Synthesis -forceOne
+prj_run Export -impl impl_800x600
+prj_project save
+prj_project close
+#Stop recording: 9/3/2024 11:33:33

@@ -1,0 +1,343 @@
+
+Loading design for application trce from file fpga_crosslink_lif_md6000_dsi_to_oled_impl_1280x1024.ncd.
+Design name: mipi2parallel_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LIF-MD6000
+Package:     CKFBGA80
+Performance: 6
+Loading device for application trce from file 'sn5w6000.nph' in environment: C:/lscc/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.38.
+Performance Hardware Data Status:   Final          Version 41.1.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Tue Sep 03 13:25:41 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.twr -gui -msgset C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/promote.xml FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ncd FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.prf 
+Design file:     fpga_crosslink_lif_md6000_dsi_to_oled_impl_1280x1024.ncd
+Preference file: fpga_crosslink_lif_md6000_dsi_to_oled_impl_1280x1024.prf
+Device,speed:    LIF-MD6000,6
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_pixel_o_c" 108.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 5.891ns
+         The internal maximum frequency of the following component is 296.912 MHz
+
+ Logical Details:  Cell type  Pin name       Component name
+
+   Destination:    PDPW8KE    CLKB           mipi2parallel_inst/b2p_inst/byte2pixel_wrapper/byte2pixel/pix_mem/pmi_ram_dpLbnonessdr48384838p1329f73b_0_2_0
+
+   Delay:               3.368ns -- based on Minimum Pulse Width
+
+Report:  296.912MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o" 27.000000 MHz ;
+            1 item scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 34.943ns
+         The internal maximum frequency of the following component is 477.555 MHz
+
+ Logical Details:  Cell type  Pin name       Component name
+
+   Destination:    SLICE      CLK            mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0
+
+   Delay:               2.094ns -- based on Minimum Pulse Width
+
+
+Passed: The following path meets requirements by 35.218ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/hs_en_ncr  (from mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o +)
+   Destination:    FF         Data in        mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/hs_en_ncr  (to mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o +)
+
+   Delay:               1.400ns  (44.6% logic, 55.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      1.400ns physical path delay mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0 to mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0 meets
+     37.037ns delay constraint less
+      0.000ns skew and
+      0.419ns DIN_SET requirement (totaling 36.618ns) by 35.218ns
+
+ Physical Path Details:
+
+      Data path mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0 to mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.422      R2C3C.CLK to       R2C3C.Q0 mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0 (from mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o)
+ROUTE         2     0.776       R2C3C.Q0 to       R2C3C.D0 mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/hs_d_en_o
+CTOF_DEL    ---     0.202       R2C3C.D0 to       R2C3C.F0 mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0
+ROUTE         1     0.000       R2C3C.F0 to      R2C3C.DI0 mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/hs_en_ncr_0_2 (to mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o)
+                  --------
+                    1.400   (44.6% logic, 55.4% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         1     1.361 *Y0.HSBYTECLKD to      R2C3C.CLK mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         1     1.361 *Y0.HSBYTECLKD to      R2C3C.CLK mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o
+                  --------
+                    1.361   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:  477.555MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "ref_clk_i_c" 24.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "int_pll_inst/CLKOP" 108.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_pixel_o_c"           |             |             |
+108.000000 MHz ;                        |  108.000 MHz|  296.912 MHz|   0  
+                                        |             |             |
+FREQUENCY NET                           |             |             |
+"mipi2parallel_inst/rx_dphy_inst/dphy_rx|             |             |
+_inst/clk_byte_o" 27.000000 MHz ;       |   27.000 MHz|  477.555 MHz|   0  
+                                        |             |             |
+FREQUENCY NET "ref_clk_i_c" 24.000000   |             |             |
+MHz ;                                   |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "int_pll_inst/CLKOP"      |             |             |
+108.000000 MHz ;                        |            -|            -|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 5 clocks:
+
+Clock Domain: ref_clk_i_c   Source: ref_clk_i.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o   Source: mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy.HSBYTECLKD   Loads: 1
+   Covered under: FREQUENCY NET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o" 27.000000 MHz ;
+
+Clock Domain: mipi2parallel_inst/clk_byte_hs_w   Source: mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy.CLKHSBYTE   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: int_pll_inst/CLKOP   Source: int_pll_inst/PLLInst_0.CLKOP   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: clk_pixel_o_c   Source: int_pll_inst/PLLInst_0.CLKOS2   Loads: 4
+   No transfer within this clock domain is found
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 1 paths, 4 nets, and 334 connections (99.40% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Tue Sep 03 13:25:41 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.twr -gui -msgset C:/Users/p2119/Desktop/FPGA_CrossLink_LIF_MD6000_DSI_to_OLED/promote.xml FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.ncd FPGA_CrossLink_LIF_MD6000_DSI_to_OLED_impl_1280x1024.prf 
+Design file:     fpga_crosslink_lif_md6000_dsi_to_oled_impl_1280x1024.ncd
+Preference file: fpga_crosslink_lif_md6000_dsi_to_oled_impl_1280x1024.prf
+Device,speed:    LIF-MD6000,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_pixel_o_c" 108.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o" 27.000000 MHz ;
+            1 item scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.110ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/hs_en_ncr  (from mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o +)
+   Destination:    FF         Data in        mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/hs_en_ncr  (to mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o +)
+
+   Delay:               0.425ns  (49.2% logic, 50.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.425ns physical path delay mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0 to mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0 meets
+      0.315ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.315ns) by 0.110ns
+
+ Physical Path Details:
+
+      Data path mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0 to mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.142      R2C3C.CLK to       R2C3C.Q0 mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0 (from mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o)
+ROUTE         2     0.216       R2C3C.Q0 to       R2C3C.D0 mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/hs_d_en_o
+CTOF_DEL    ---     0.067       R2C3C.D0 to       R2C3C.F0 mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0
+ROUTE         1     0.000       R2C3C.F0 to      R2C3C.DI0 mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/hs_en_ncr_0_2 (to mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o)
+                  --------
+                    0.425   (49.2% logic, 50.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         1     0.442 *Y0.HSBYTECLKD to      R2C3C.CLK mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy to mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/rx_global_ctrl_inst/rx_global_ctrl/lp_hs_ctrl_d0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         1     0.442 *Y0.HSBYTECLKD to      R2C3C.CLK mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o
+                  --------
+                    0.442   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "ref_clk_i_c" 24.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "int_pll_inst/CLKOP" 108.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_pixel_o_c"           |             |             |
+108.000000 MHz ;                        |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET                           |             |             |
+"mipi2parallel_inst/rx_dphy_inst/dphy_rx|             |             |
+_inst/clk_byte_o" 27.000000 MHz ;       |     0.000 ns|     0.110 ns|   2  
+                                        |             |             |
+FREQUENCY NET "ref_clk_i_c" 24.000000   |             |             |
+MHz ;                                   |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "int_pll_inst/CLKOP"      |             |             |
+108.000000 MHz ;                        |            -|            -|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 5 clocks:
+
+Clock Domain: ref_clk_i_c   Source: ref_clk_i.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o   Source: mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy.HSBYTECLKD   Loads: 1
+   Covered under: FREQUENCY NET "mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/clk_byte_o" 27.000000 MHz ;
+
+Clock Domain: mipi2parallel_inst/clk_byte_hs_w   Source: mipi2parallel_inst/rx_dphy_inst/dphy_rx_inst/u_dphy_wrapper/MIXEL.mixel_dphy.CLKHSBYTE   Loads: 3
+   No transfer within this clock domain is found
+
+Clock Domain: int_pll_inst/CLKOP   Source: int_pll_inst/PLLInst_0.CLKOP   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: clk_pixel_o_c   Source: int_pll_inst/PLLInst_0.CLKOS2   Loads: 4
+   No transfer within this clock domain is found
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 1 paths, 4 nets, and 334 connections (99.40% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
